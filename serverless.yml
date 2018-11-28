@@ -60,6 +60,12 @@ functions:
       - http:
           path: authenticate
           method: get
+  callback:
+    handler: bin/callback
+    events:
+      - http:
+          path: callback
+          method: get
   costIndex:
     handler: bin/costIndex
     events:
